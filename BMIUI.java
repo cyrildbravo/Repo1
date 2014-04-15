@@ -30,7 +30,7 @@ public class BMIUI{
 			label[i] = new JLabel(labelHeader[i]);
 			label[i].setBounds(30,j,130,50);
 			textArea[i] = new JTextArea();
-			textArea[i].setBounds(170,j+15,150,20);
+			textArea[i].setBounds(190,j+15,100,20);
 			panel.add(label[i]);
 			panel.add(textArea[i]);
 		}
@@ -41,7 +41,7 @@ public class BMIUI{
 		
 		textArea[4] = new JTextArea();
 		textArea[4].setEnabled(false);
-		textArea[4].setBounds(360,50,300,250);
+		textArea[4].setBounds(360,50,150,250);
 		panel.add(textArea[4]);
 	}
 	
@@ -51,9 +51,9 @@ public class BMIUI{
 		frame.pack();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
-		frame.setSize(new Dimension(700,400));
+		frame.setSize(new Dimension(550,400));
 		frame.setResizable(false);
-		frame.setLocation(width/4, height/5);
+		frame.setLocation(width/3, height/5);
 	}
 	
 	public JButton getButton(){

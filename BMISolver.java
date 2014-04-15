@@ -6,7 +6,7 @@ import java.io.*;
 
 public class BMISolver implements ActionListener{
 	/* Initialize global variables */
-	private String name;
+	private String name, classification;
 	private int age;
 	private double weight, height, bmi = 0.0;
 	private BMIUI ui;
@@ -26,7 +26,14 @@ public class BMISolver implements ActionListener{
 				age = Integer.parseInt(ui.getText(1).trim());
 				weight = Double.parseDouble(ui.getText(2).trim());
 				height = Double.parseDouble(ui.getText(3).trim());
-				bmi = weight+height;//weight / (height * height);
+				bmi = weight / (height * height);
+				
+				if(bmi<18.5)										classification="underweight";
+				else if(bmi>=18.5 && bmi<=24.9) 	classification="normal";
+				else if(bmi>=25.0 && bmi<=29.9)	classification="overweight";
+				else if(bmi>=30.0)							classification="obese";							
+				
+				
 				ui.setText("Hi " + name +"!\nYour BMI is " + bmi + ".\n");
 			}
 			catch(Exception ex){
