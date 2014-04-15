@@ -30,37 +30,16 @@ public class BMIUI{
 			label[i] = new JLabel(labelHeader[i]);
 			label[i].setBounds(30,j,130,50);
 			textArea[i] = new JTextArea();
-	private static Toolkit kit = Toolkit.getDefaultToolkit();
-	private static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight (kg):", "Enter your height (cm):" };
-	private static int height, width;
-	private static BMISolver solver;
-	
-	// Constructor for BMIUI
-	public BMIUI(){
-		height = kit.getScreenSize().height;
-		width = kit.getScreenSize().width;
-		setComponents();
-		setFrame();
-		solver = new BMISolver(this);
-	}
-	
-	// Sets buttons, labels, text areas in JFrame
-	public void setComponents(){
-		panel.setLayout(null);
-		
-		for(int i=0, j=50; i<4; i++, j+=50){
-			label[i] = new JLabel(labelHeader[i]);
-			label[i].setBounds(30,j,130,50);
-			textArea[i] = new JTextArea();
 			textArea[i].setBounds(190,j+15,90,20);
 			panel.add(label[i]);
 			panel.add(textArea[i]);
 		}
-
+		
 		button.setBounds(130,270,120,30);
 		panel.add(button);
 		
 		textArea[4] = new JTextArea();
+		textArea[4].setBounds(330,50,180,250);
 		panel.add(textArea[4]);
 	}
 		
