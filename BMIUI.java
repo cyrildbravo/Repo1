@@ -7,7 +7,7 @@ public class BMIUI{
 	private static JPanel panel = new JPanel();
 	private static JLabel[] label = new JLabel[4];
 	private static JTextArea[] textArea= new JTextArea[5];
-	private static JButton button;
+	private static JButton button = new JButton("Compute BMI");
 	private static Toolkit kit = Toolkit.getDefaultToolkit();
 	private static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight (kg):", "Enter your height (cm):" };
 	private static int height, width;
@@ -35,7 +35,6 @@ public class BMIUI{
 			panel.add(textArea[i]);
 		}
 
-		button = new JButton("Compute BMI");
 		button.setBounds(130,270,120,30);
 		panel.add(button);
 		
