@@ -52,7 +52,11 @@ public class BMIUI{
 		panel.add(textArea[4]);
 	}
 	
-	/* setFrame: customizes JFrame*/	
+<<<<<<< HEAD
+	/* setFrame: customizes JFrame*/
+=======
+	/* setFrame: customized JFrame */
+>>>>>>> tester
 	public void setFrame(){
 		frame.add(panel);
 		frame.pack();
