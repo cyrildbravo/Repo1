@@ -27,7 +27,6 @@ public class BMIUI{
 	/* setComponents: sets buttons, labels, textarea into JLabel */
 	public void setComponents(){
 		panel.setLayout(null);
-		panel.setBackground(Color.CYAN);
 		
 		for(int i=0, j=50; i<4; i++, j+=50){
 			label[i] = new JLabel(labelHeader[i]);
@@ -53,6 +52,7 @@ public class BMIUI{
 		panel.add(textArea[4]);
 	}
 	
+	/* setFrame: customizes JFrame*/
 	public void setFrame(){
 		frame.add(panel);
 		frame.pack();

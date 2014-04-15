@@ -15,13 +15,10 @@ public class BMISolver implements ActionListener{
 	public BMISolver(BMIUI ui){
 		this.ui = ui;
 		ui.getButton().addActionListener(this);
+		System.out.println("B");
 	}
 
-<<<<<<< HEAD
-	public void actionPerformed(Event e){
-=======
 	public void actionPerformed(ActionEvent e){
->>>>>>> 60582d1d34c8c206ad5b660032454f3e02fc0ea0
 		if(e.getSource() == ui.getButton()){
 			System.out.println("BUTTON");
 			try{
