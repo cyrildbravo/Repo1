@@ -40,7 +40,6 @@ public class BMIUI{
 		panel.add(button);
 		
 		textArea[4] = new JTextArea();
-		textArea[4].setEnabled(false);
 		textArea[4].setBounds(360,50,150,250);
 		panel.add(textArea[4]);
 	}

@@ -31,7 +31,7 @@ public class BMISolver implements ActionListener{
 				else if(bmi>=25.0 && bmi<=29.9)	classification="overweight";
 				else if(bmi>=30.0)							classification="obese";							
 				
-				ui.setText("Hi " + name +" ("+age+" years old) !\nYour BMI is " + bmi + ".\nClassification: ");
+				ui.setText("Hi " + name +"!\nYour age is: " + age + ".\nYour BMI is " + bmi + ".\nClassification: ");
 			}
 			catch(Exception ex){
 				JOptionPane.showMessageDialog(null, "Invalid input.");
