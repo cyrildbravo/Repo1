@@ -44,8 +44,7 @@ public class BMIUI{
 		textArea[4].setBounds(360,50,300,250);
 		panel.add(textArea[4]);
 	}
-	
-	/* setFrame: customizes JFrame*/	
+		
 	public void setFrame(){
 		frame.add(panel);
 		frame.pack();

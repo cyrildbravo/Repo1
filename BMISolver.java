@@ -5,13 +5,12 @@ import java.util.*;
 import java.io.*;  
 
 public class BMISolver implements ActionListener{
-	/* Initialize global variables */
 	private String name;
 	private int age;
 	private double weight, height, bmi = 0.0;
 	private BMIUI ui;
 
-	/* Constructor for BMISolver */
+	// Constructor for BMISolver
 	public BMISolver(BMIUI ui){
 		this.ui = ui;
 		ui.getButton().addActionListener(this);
@@ -26,8 +25,8 @@ public class BMISolver implements ActionListener{
 				age = Integer.parseInt(ui.getText(1).trim());
 				weight = Double.parseDouble(ui.getText(2).trim());
 				height = Double.parseDouble(ui.getText(3).trim());
-				bmi = weight+height;//weight / (height * height);
-				ui.setText("Hi " + name +"!\nYour BMI is " + bmi + ".\n");
+				bmi = weight / (height * height);
+				ui.setText("Hi " + name +" ("+age+" years old) !\nYour BMI is " + bmi + ".\nClassification: ");
 			}
 			catch(Exception ex){
 				JOptionPane.showMessageDialog(null, "Invalid input.");
