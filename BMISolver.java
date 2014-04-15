@@ -5,14 +5,11 @@ import java.util.*;
 import java.io.*;  
 
 public class BMISolver implements ActionListener{
-<<<<<<< HEAD
-	/* Initialize global variables */
 	private String name, classification;
 	private int age;
 	private double weight, height, bmi = 0.0;
 	private BMIUI ui;
 
-	// Constructor for BMISolver
 	public BMISolver(BMIUI ui){
 		this.ui = ui;
 		ui.getButton().addActionListener(this);
