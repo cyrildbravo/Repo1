@@ -26,12 +26,12 @@ public class BMISolver implements ActionListener{
 				height = Double.parseDouble(ui.getText(3).trim());
 				bmi = weight / (height * height);
 
-				if(bmi<18.5)										classification="underweight";
-				else if(bmi>=18.5 && bmi<=24.9) 	classification="normal";
-				else if(bmi>=25.0 && bmi<=29.9)	classification="overweight";
-				else if(bmi>=30.0)							classification="obese";							
+				if(bmi<18.5)										classification="Underweight";
+				else if(bmi>=18.5 && bmi<=24.9) 	classification="Normal";
+				else if(bmi>=25.0 && bmi<=29.9)	classification="Overweight";
+				else if(bmi>=30.0)							classification="Obese";							
 				
-				ui.setText("Hi " + name +" ("+age+" years old) !\nYour BMI is " + bmi + ".\nClassification: ");
+				ui.setText("Hi " +name+" !\nYour age is " +age+ "\nYour BMI is " +bmi+ "\nYour classification is "  +classification);
 			}
 			catch(Exception ex){
 				JOptionPane.showMessageDialog(null, "Invalid input.");

@@ -30,7 +30,7 @@ public class BMIUI{
 			label[i] = new JLabel(labelHeader[i]);
 			label[i].setBounds(30,j,130,50);
 			textArea[i] = new JTextArea();
-			textArea[i].setBounds(190,j+15,100,20);
+			textArea[i].setBounds(190,j+15,90,20);
 			panel.add(label[i]);
 			panel.add(textArea[i]);
 		}
@@ -40,8 +40,7 @@ public class BMIUI{
 		panel.add(button);
 		
 		textArea[4] = new JTextArea();
-		textArea[4].setEnabled(false);
-		textArea[4].setBounds(360,50,150,250);
+		textArea[4].setBounds(310,50,190,250);
 		panel.add(textArea[4]);
 	}
 		
