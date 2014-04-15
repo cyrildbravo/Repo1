@@ -9,7 +9,7 @@ public class BMIUI{
 	private static JTextArea[] textArea= new JTextArea[5];
 	private static JButton button = new JButton("Compute BMI");
 	private static Toolkit kit = Toolkit.getDefaultToolkit();
-	private static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight (kg):", "Enter your height (cm):" };
+	private static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight (kg):", "Enter your height (m):" };
 	private static int height, width;
 	private static BMISolver solver;
 	
