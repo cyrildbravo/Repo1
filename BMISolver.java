@@ -10,10 +10,6 @@ public class BMISolver implements ActionListener{
 
 	public BMISolver(BMIUI ui){
 		this.ui = ui;
-		init();
-	}
-
-	public void init(){
 		ui.getButton().addActionListener(this);
 	}
 
