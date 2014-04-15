@@ -11,7 +11,7 @@ public class BMIUI{
 	public static JLabel[] label = new JLabel[4];
 	public static JTextArea[] textArea= new JTextArea[5];
 	public static Toolkit kit = Toolkit.getDefaultToolkit();
-	public static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight:", "Enter your height:" };
+	public static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight (kg):", "Enter your height (cm):" };
 	public static int height, width;
 	Font font = new Font("Verdana", Font.BOLD, 12);
 	Font font2 = new Font("Comic Sans MS", Font.BOLD, 18);

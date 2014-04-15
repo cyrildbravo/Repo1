@@ -17,7 +17,6 @@ public class BMISolver implements ActionListener{
 		ui.getButton().addActionListener(this);
 	}
 
-
 	public void actionPerformed(Event e){
 
 		if(e.getSource() == ui.getButton()){
