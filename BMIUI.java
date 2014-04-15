@@ -1,10 +1,10 @@
 import java.util.*;
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class BMIUI{
 	/* Initialize global variables */
-	//public static BMISolver solver = new BMISolver(this);
+	public static BMISolver solver = new BMISolver(this);
 	public static JFrame frame = new JFrame("BMI");
 	public static JPanel panel = new JPanel();
 	public static JButton button = new JButton();

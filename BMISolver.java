@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.*;
 import java.util.*;
 
 public class BMISolver implements ActionListener{
@@ -14,7 +15,6 @@ public class BMISolver implements ActionListener{
 	}
 
 	public void actionPerformed(Event e){
-
 		if(e.getSource() == ui.getButton()){
 			try{
 				name = ui.getText(0).trim();
