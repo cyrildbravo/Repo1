@@ -13,7 +13,6 @@ public class BMISolver implements ActionListener{
 	public BMISolver(BMIUI ui){
 		this.ui = ui;
 		ui.getButton().addActionListener(this);
-		System.out.println("B");
 	}
 
 	public void actionPerformed(ActionEvent e){
