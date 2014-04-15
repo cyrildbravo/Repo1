@@ -13,7 +13,7 @@ public class BMIUI{
 	public static Toolkit kit = Toolkit.getDefaultToolkit();
 	public static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight:", "Enter your height:" };
 	public static int height, width;
-	Font font = new Font("Verdana", Font.BOLD, 12);
+	Font font = new Font("Arial", Font.BOLD, 12);
 	Font font2 = new Font("Comic Sans MS", Font.BOLD, 18);
 	
 	/* Constructor for BMIUI */
@@ -42,8 +42,13 @@ public class BMIUI{
 
 		button = new JButton("Compute BMI");
 		button.setFont(font);
-		button.setBounds(130,260,120,30);
+		button.setBounds(130,270,120,30);
 		panel.add(button);
+		
+		textArea[4] = new JTextArea();
+		textArea[4].setFont(font2);
+		textArea[4].setBounds(340,50,400,150);
+		panel.add(textArea[4]);
 	}
 	
 	public void setFrame(){
@@ -53,7 +58,7 @@ public class BMIUI{
 		frame.setVisible(true);
 		frame.setSize(new Dimension(700,400));
 		frame.setResizable(false);
-		frame.setLocation(width/3, height/5);
+		frame.setLocation(width/4, height/5);
 	}
 	
 	public JButton getButton(){
