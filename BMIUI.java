@@ -27,16 +27,17 @@ public class BMIUI{
 	/* setComponents: sets buttons, labels, textarea into JLabel */
 	public void setComponents(){
 		panel.setLayout(null);
+		panel.setBackground(Color.CYAN);
 		
 		for(int i=0, j=50; i<4; i++, j+=50){
 			label[i] = new JLabel(labelHeader[i]);
 			label[i].setFont(font);
-			label[i].setBounds(50,j,120,50);
+			label[i].setBounds(30,j,130,50);
 			panel.add(label[i]);
 			
 			textArea[i] = new JTextArea();
 			textArea[i].setFont(font2);
-			textArea[i].setBounds(170,j+10,150,30);
+			textArea[i].setBounds(180,j+10,150,30);
 			panel.add(textArea[i]);
 		}
 
@@ -47,7 +48,8 @@ public class BMIUI{
 		
 		textArea[4] = new JTextArea();
 		textArea[4].setFont(font2);
-		textArea[4].setBounds(340,50,400,150);
+		textArea[4].setEnabled(false);
+		textArea[4].setBounds(360,50,300,250);
 		panel.add(textArea[4]);
 	}
 	
