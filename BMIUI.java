@@ -5,9 +5,9 @@ import javax.swing.*;
 public class BMIUI{
 	private static JFrame frame = new JFrame("BMI");
 	private static JPanel panel = new JPanel();
-	private static JButton button;
 	private static JLabel[] label = new JLabel[4];
 	private static JTextArea[] textArea= new JTextArea[5];
+	private static JButton button;
 	private static Toolkit kit = Toolkit.getDefaultToolkit();
 	private static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight (kg):", "Enter your height (cm):" };
 	private static int height, width;

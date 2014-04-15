@@ -15,7 +15,6 @@ public class BMISolver implements ActionListener{
 	}
 
 	public void actionPerformed(ActionEvent e){
-		
 		// Prints results to BMIUI when button is clicked
 		if(e.getSource() == ui.getButton()){
 			try{
