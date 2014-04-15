@@ -35,7 +35,7 @@ public class BMIUI{
 			panel.add(textArea[i]);
 		}
 		
-		button.setBounds(130,270,120,30);
+		button.setBounds(110,270,120,30);
 		panel.add(button);
 		
 		textArea[4] = new JTextArea();
