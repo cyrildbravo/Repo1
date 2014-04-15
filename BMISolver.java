@@ -1,5 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.*;
 import java.util.*;
 import java.io.*;  
 
@@ -16,14 +17,19 @@ public class BMISolver implements ActionListener{
 		ui.getButton().addActionListener(this);
 	}
 
+<<<<<<< HEAD
 	public void actionPerformed(Event e){
+=======
+	public void actionPerformed(ActionEvent e){
+>>>>>>> 60582d1d34c8c206ad5b660032454f3e02fc0ea0
 		if(e.getSource() == ui.getButton()){
+			System.out.println("BUTTON");
 			try{
 				name = ui.getText(0).trim();
 				age = Integer.parseInt(ui.getText(1).trim());
 				weight = Double.parseDouble(ui.getText(2).trim());
 				height = Double.parseDouble(ui.getText(3).trim());
-				bmi = weight / (height * height);
+				bmi = weight+height;//weight / (height * height);
 				ui.setText("BMI: \n" + bmi);
 			}
 			catch(Exception ex){

@@ -1,20 +1,20 @@
 import java.util.*;
-import javax.swing.*;
 import java.awt.*;
+import javax.swing.*;
 
 public class BMIUI{
 	/* Initialize global variables */
-	//public static BMISolver solver = new BMISolver(this);
-	public static JFrame frame = new JFrame("BMI");
-	public static JPanel panel = new JPanel();
-	public static JButton button = new JButton();
-	public static JLabel[] label = new JLabel[4];
-	public static JTextArea[] textArea= new JTextArea[5];
-	public static Toolkit kit = Toolkit.getDefaultToolkit();
-	public static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight (kg):", "Enter your height (cm):" };
-	public static int height, width;
-	Font font = new Font("Arial", Font.BOLD, 12);
-	Font font2 = new Font("Comic Sans MS", Font.BOLD, 18);
+	private static JFrame frame = new JFrame("BMI");
+	private static JPanel panel = new JPanel();
+	private static JButton button = new JButton();
+	private static JLabel[] label = new JLabel[4];
+	private static JTextArea[] textArea= new JTextArea[5];
+	private static Toolkit kit = Toolkit.getDefaultToolkit();
+	private static String[] labelHeader = {"Enter your name:", "Enter your age:", "Enter your weight (kg):", "Enter your height (cm):" };
+	private static int height, width;
+	public BMISolver solver = new BMISolver(this);
+	private Font font = new Font("Arial", Font.BOLD, 12);
+	private Font font2 = new Font("Comic Sans MS", Font.BOLD, 18);
 	
 	/* Constructor for BMIUI */
 	public BMIUI(){
@@ -71,11 +71,8 @@ public class BMIUI{
 		return textArea[i].getText();
 	}
 	
-	public void setText(int i, String text){
-		textArea[i].setText(text);
-	}
-	
-	public void printResults(String text){
+	public void setText(String text){
 		textArea[4].setText(text);
 	}
+	
 }
